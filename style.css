@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Big+Shoulders+Display&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    }
+
+.grid {
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 200px;
+    border: none;
+}
+.grid a {
+    color: rgb(4, 31, 18);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.grid:hover {
+    background-color: transparent;
+    border: 2px solid hsl(31, 77%, 52%);
+}
+
+main {
+    margin: auto;
+    width: 50%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    color:  hsl(0, 0%, 95%);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    padding: 5px;
+    margin-bottom: 25px;
+    font-family: 'Lexend Deca';
+}
+
+img {
+ margin-bottom: 40px;
+}
+
+.more, .more2, .more3 {
+    font-family: Lexend Deca;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    border-radius: 16px;
+    padding: 6px 14px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.more {
+    color: hsl(31, 77%, 52%);
+}
+.more2 {
+    color: hsl(184, 100%, 22%);
+}
+.more3 {
+    color: rgb(4, 31, 18);
+}
+.more:hover, .more2:hover, .more3:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.item1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0px 0px 8px;
+    width: 50%;
+    padding: 40px;
+}
+
+
+.item2 {
+    background-color:hsl(184, 100%, 22%);
+    border-radius: 0px;
+    width: 50%;
+    padding: 40px;
+}
+
+.item3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 8px 8px 0px;
+    width: 50%;
+    padding: 40px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        height: 50vh;
+    }
+    .more, .more2, .more3 {
+        padding: 8px 28px;
+    }
+    
+}

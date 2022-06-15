@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(5, 5, 34);
+    min-height: 100vh;
+    display: flex;
+}
+
+.flex{
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 200px;
+    border: none;
+}
+.flex a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.flex:hover {
+    background-color: transparent;
+    border: 2px solid hsl(31, 77%, 52%);
+}
+
+
+main {
+    display: grid;
+    margin: auto;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+    'A A B'
+    'C D D'
+    'C E E' ;
+
+}
+main div {
+    margin: 5px;
+}
+
+.box1 {
+    grid-area: A;
+    padding: 20px 100px 80px 100px;
+    background-color: rgb(126, 61, 0);
+}
+
+.box2 {
+    grid-area: B;
+    padding: 20px 80px 80px 20px;
+    background-color: rgb(201, 134, 11);
+}
+
+.box3 {
+    grid-area: C;
+    padding: 45px 80px 80px 45px;
+    background-color: rgb(5, 104, 38);
+}
+
+.box4 {
+    grid-area: D;
+    padding: 20px 80px 40px 20px;
+    background-color: rgb(11, 109, 201);
+}
+
+.box5 {
+    grid-area: E;
+    padding: 20px 80px 40px 20px;
+    background-color: rgb(11, 109, 201);
+}
